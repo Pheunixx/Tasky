@@ -16,9 +16,22 @@ class _SignUpState extends State<SignUp> {
     _password = TextEditingController();
     
   }
+  @override
+  void dispose() {
+    _email.dispose();
+    _password.dispose();
+    // TODO: implement dispose
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: Column(
+        children: [
+          
+        ],
+      ),
+    );
   }
 }
