@@ -29,7 +29,21 @@ class _SignUpState extends State<SignUp> {
     return Scaffold(
       body: Column(
         children: [
-          
+          TextField(
+            controller: _email,
+            obscureText: false,
+            decoration: InputDecoration(
+              hintText: 'Enter your Email here'
+            ),
+          ),
+
+          TextField(
+            controller: _password,
+            obscureText: true,
+            decoration: InputDecoration(
+              hintText: 'Enter your password'
+            ),
+          )
         ],
       ),
     );
