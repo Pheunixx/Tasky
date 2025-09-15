@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:task_manager/signup%20and%20login/signup_page.dart';
+import 'package:task_manager/views/WelcomeScreen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -31,7 +32,7 @@ class MyApp extends StatelessWidget {
         // tested with just a hot reload.
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: const SignUp()
+      home: const Welcome()
     );
   }
   }
