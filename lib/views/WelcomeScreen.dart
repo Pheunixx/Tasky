@@ -14,6 +14,7 @@ class Welcome extends StatelessWidget {
               [Color(0xffA399FF), Color(0x5A46FC)]
               )
             ),
+            child: Image.asset('assets/images/image5.png'),
           ),
           Container(
             color: Colors.white,
