@@ -33,7 +33,13 @@ class _SignUpState extends State<SignUp> {
             controller: _email,
             obscureText: false,
             decoration: InputDecoration(
-              hintText: 'Enter your Email here'
+              filled: true,
+              fillColor: Colors.white,
+              hintText: 'Enter your Email here',
+              hintStyle: TextStyle(
+                color: Colors.grey,
+                fontSize: 8
+              )
             ),
           ),
 
@@ -41,7 +47,13 @@ class _SignUpState extends State<SignUp> {
             controller: _password,
             obscureText: true,
             decoration: InputDecoration(
-              hintText: 'Enter your password'
+              filled: true,
+              fillColor: Colors.white,
+              hintText: 'Enter your password',
+              hintStyle: TextStyle(
+                color: Colors.grey,
+                fontSize: 8
+                )
             ),
           )
         ],
