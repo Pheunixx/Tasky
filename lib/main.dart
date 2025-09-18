@@ -1,8 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:task_manager/services/task_service.dart';
 import 'package:task_manager/signup%20and%20login/signup_page.dart';
 import 'package:task_manager/views/WelcomeScreen.dart';
 
-void main() {
+void main() async{
+  WidgetsFlutterBinding.ensureInitialized();
+  TaskService service = TaskService();
+  service.getTasks();
+  service.addTask("sleep", 5);
+  
   runApp(const MyApp());
 }
 
